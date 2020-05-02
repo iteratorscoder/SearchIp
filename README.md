@@ -1,10 +1,10 @@
 #### 根据IP查询地址
+
 方案2：
 MySQL，id是主键。ip是二级索引
 用redis做缓存。
 
 为了实现高效率的地址查找以及比对，将ip地址转化为long型存入redis进行处理
-
 
 
 方案1：
@@ -28,7 +28,8 @@ MySQL，id是主键。ip是二级索引
 3、把treeMap的key保存到ArrayList中，并且排序，用来二分查找
 参考：https://www.cnblogs.com/yydcdut/p/3825721.html
 
+
 4、二分法查找list得到key.key是ipStrStartNum
-  
-    
+      
+      
 5、再用key去treeMap里面查找ip的地址。
